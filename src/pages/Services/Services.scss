@@ -2336,6 +2336,19 @@
                     }
                 }
             }
+
+            &__team {
+                &__wrapper {
+                    &__right {
+                        .percentWrapper {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap !important;
+                            row-gap: 30px !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -2534,6 +2547,52 @@
 @media (max-width: 480px) {
     .service {
         &__wrapper {
+
+            &__custum {
+
+                &__phone {
+                    right: -10px;
+                    top: -35px;
+                    width: 130px;
+                }
+                &__background{
+                    background-color: #1C1C25;
+                    img{
+                        display: none;
+                    }
+                }
+                &__laptop {
+                    width: 130px;
+                    left: 5%;
+                    bottom: 20%;
+                }
+
+                &__content {
+                    top: 40%;
+                    width: 80%;
+                    h4 {
+                        font-size: 13px;
+                    }
+
+                    h1 {
+                        width: 100%;
+                        font-size: 28px;
+                    }
+                    
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                        line-height: 21px;
+
+                    }
+
+                    button {
+                        padding: 12px 15px;
+                    }
+                }
+            }
+
+
             &__jane {
                 align-items: unset;
                 flex-direction: column-reverse;
@@ -2583,7 +2642,18 @@
                     }
                 }
             }
-
+            &__team {
+                &__wrapper {
+                    &__right {
+                        .percentWrapper {
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap !important;
+                            row-gap: 30px !important;
+                        }
+                    }
+                }
+            }
             &__people {
                 text-align: center;
                 padding: 0 32px;
