@@ -2549,14 +2549,18 @@
         &__wrapper {
 
             &__custum {
-
+                position: relative;
+                background-color: #1C1C25;
+                height: 70vh;
                 &__phone {
+                    position: absolute;
                     right: -10px;
                     top: -35px;
                     width: 130px;
+                    z-index: 1;
                 }
                 &__background{
-                    background-color: #1C1C25;
+                    display: none;
                     img{
                         display: none;
                     }
@@ -2591,7 +2595,6 @@
                     }
                 }
             }
-
 
             &__jane {
                 align-items: unset;
@@ -2642,9 +2645,15 @@
                     }
                 }
             }
+
             &__team {
                 &__wrapper {
                     &__right {
+                        h2{
+                            font-size: 28px;
+                            line-height: 31px !important;
+                            margin-bottom: 10px;
+                        }
                         .percentWrapper {
                             display: flex;
                             justify-content: center;
@@ -2654,12 +2663,15 @@
                     }
                 }
             }
+
             &__people {
                 text-align: center;
                 padding: 0 32px;
 
                 h2 {
                     margin-bottom: 10px !important;
+                    font-size: 28px;
+                    line-height: 31px;
                 }
 
                 p {
@@ -2701,6 +2713,122 @@
                             &__icons {
                                 justify-content: center !important;
 
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__ourExp {
+                margin-top: 120px auto;
+
+                h4 {
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 21px;
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__lists {
+                    display: none;
+                }
+
+                &__responsiveList {
+                    display: flex !important;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 100%;
+                        svg{
+                            font-size: 70x;
+                        }
+                        span{
+                            h2{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &__about {
+                display: flex;
+                align-items: center;
+                margin-top: 120px;
+                flex-direction: column;
+                padding: 0;
+
+                &__left {
+                    width: 100%;
+                    padding: 15px;
+
+                    .title--modified {
+                        margin-bottom: 10px !important;
+                    }
+
+                    p {
+                        font-size: 21px;
+                        margin-bottom: 35px;
+                    }
+                }
+                &__left{
+                    h2{
+                        font-size: 28px;
+                    }
+                }
+                &__right {
+                    width: 100%;
+                    padding: unset;
+                    margin-top: 20px;
+                    height: 400px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__contacts {
+                margin: 65px auto 35px;
+                flex-direction: column-reverse;
+
+                &__left {
+                    width: 100%;
+                    margin-top: 40px;
+                    
+                    &__block {
+                        width: 100%;
+                        margin: 0 0 32px;
+                    }
+                }
+                &__right{
+                    width: 100%;
+                    h2{
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+                &__left{
+                    &__block{
+                        &__right{
+                            h2{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 14px;
                             }
                         }
                     }
