@@ -6,7 +6,13 @@ import { OurServices, Analysis, People } from "../../Data"
 function Services() {
 
   let [modal, setModal] = React.useState(false)
-
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
   return (
     <div className='service'>
       <div className="service__wrapper">
